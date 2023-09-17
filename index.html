@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>XO GAME</title>
+  </head>
+
+  <body>
+    <div id="intro" class="overlay visible">
+      <h1>Welcome to <br> Tic Tac Toe</h1>
+      <button class="btn" id="play">Play</button>
+    </div>
+    <div id="winX" class="overlay win">
+      <h1>X Won!</h1>
+      <button class="replay btn">Replay?</button>
+    </div>
+    <div id="winO" class="overlay win">
+      <h1>O Won!</h1>
+      <button class="replay btn">Replay?</button>
+    </div>
+    <div id="tie" class="overlay">
+      <h1>It's a tie!</h1>
+      <button class="replay btn">Replay?</button>
+    </div>
+<!--     <h1 class="title"><span style="color: #C0392B">Tic</span>~<span style="color: #a8a495">Tac</span>~<span style="color: #2471A3 ">Toe</span></h1> -->
+    <div id="container">
+      <div class="box bR bD" data-r="0" data-c="0"></div>
+      <div class="box bR bD bL" data-r="0" data-c="1"></div>
+      <div class="box bL bD" data-r="0" data-c="2"></div>
+
+      <div class="box bU bR bD" data-r="1" data-c="0"></div>
+      <div class="box bU bR bD bL" data-r="1" data-c="1"></div>
+      <div class="box bL bD bU" data-r="1" data-c="2"></div>
+
+      <div class="box bU bR" data-r="2" data-c="0"></div>
+      <div class="box bU bL bR" data-r="2" data-c="1"></div>
+      <div class="box bU bL" data-r="2" data-c="2"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
